@@ -1,0 +1,55 @@
+# 注释：以下是 Python + LangChain 项目的通用 .gitignore 配置
+
+# 1. 敏感配置文件（你的核心需求，忽略 .env）
+.env
+# 若有多个环境配置文件，可扩展
+.env.*
+.env.local
+
+# 2. Python 编译产物/缓存
+__pycache__/          # Python 字节码缓存目录
+*.pyc                 # 编译后的字节码文件
+*.pyo                 # 优化后的字节码文件
+*.pyd                 # Windows 下的 Python 扩展模块
+*.pyw                 # Windows 下的 Python 窗口程序文件
+__pycache__/          # 递归忽略所有 __pycache__ 目录
+**/__pycache__/
+
+# 3. Python 虚拟环境（若使用）
+venv/
+env/
+virtualenv/
+*.venv/
+
+# 4. 日志文件
+logs/
+*.log
+log/
+*.log.*
+
+# 5. 临时文件/系统文件
+*.tmp
+*.temp
+.DS_Store             # Mac 系统隐藏文件
+Thumbs.db             # Windows 系统缩略图缓存文件
+desktop.ini           # Windows 系统目录配置文件
+
+# 6. IDE/编辑器缓存（根据你的编辑器选择，示例 VS Code + PyCharm）
+# VS Code
+.vscode/
+*.code-workspace
+.idea/                # PyCharm/IntelliJ 缓存目录
+*.iml                 # PyCharm 项目文件
+*.ipr
+*.iws
+
+# 7. 数据文件/大文件（若有本地测试数据，不提交到仓库）
+data/
+*.csv.local
+*.xlsx
+*.json.local          # 若有本地测试用的 user.json 副本，可忽略
+
+# 8. 打包产物
+dist/
+build/
+*.egg-info/
