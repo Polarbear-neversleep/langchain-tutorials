@@ -1,0 +1,26 @@
+{
+  "user_count": 3,
+  "users": [
+    {
+      "user_id": "u001",
+      "name": "林晓",
+      "age": 28,
+      "email": "linxiao@example.com",
+      "is_active": true
+    },
+    {
+      "user_id": "u002",
+      "name": "张弛",
+      "age": 35,
+      "email": "zhangchi@example.com",
+      "is_active": false
+    },
+    {
+      "user_id": "u003",
+      "name": "王萌",
+      "age": 22,
+      "email": "wangmeng@example.com",
+      "is_active": true
+    }
+  ]
+}

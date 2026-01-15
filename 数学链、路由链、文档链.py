@@ -1,0 +1,2 @@
+# create_stuff_documents_chain 将多个文档内容合并成单个长文本的链式工具
+# create_sql_query_chain 将自然语言转换成数据库SQL查询
